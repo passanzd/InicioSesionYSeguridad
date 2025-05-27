@@ -1,0 +1,204 @@
+.perfil-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+
+.perfil-info.ampliado {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 28px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    min-width: 350px;
+    flex: 1;
+}
+
+.icono-usuario {
+    font-size: 4.5rem;
+    margin: 0 auto 1rem;
+    text-align: center;
+    color: #888;
+}
+
+.perfil-info h2 {
+    color: #2C2C2C;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #E50026;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+}
+
+.perfil-info p {
+    font-size: 1rem;
+    color: #2C2C2C;
+    margin: 0.6rem 0;
+}
+
+.perfil-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.perfil-botones .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.btn.editar {
+    background: linear-gradient(135deg, #496C9A, #6F9AC6);
+}
+
+.btn.baja {
+    background: linear-gradient(135deg, #E50026, #FF6A6A);
+}
+
+
+.menu-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn.cerrar-sesion {
+    background: linear-gradient(135deg, #D93C3C, #F97F1D);
+}
+
+
+.perfil-layout.perfil-actualizado {
+    justify-content: flex-start;
+    padding-left: 5vw;
+}
+
+.tarjetas-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 1rem;
+    align-self: stretch;
+    justify-content: center;
+    min-width: 260px;
+    margin-top: 1.5rem;
+}
+
+.card-opcion {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    padding: 14px 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #2C2C2C;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-left: 5px solid #E50026;
+}
+
+.card-opcion i {
+    font-size: 1.3rem;
+    color: #E50026;
+    min-width: 20px;
+}
+
+.card-opcion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-opcion.cerrar-sesion {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #E50026, #F7941D);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card-opcion.cerrar-sesion:hover {
+    transform: scale(1.05);
+}
+
+.card-opcion.cerrar-sesion i {
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-contenido h3 {
+    margin-bottom: 1rem;
+    color: #2C2C2C;
+    border-bottom: 2px solid #E50026;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-contenido .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.modal-contenido .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #496C9A;
+    margin-bottom: 6px;
+}
+
+.modal-contenido .input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
